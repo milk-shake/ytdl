@@ -1,0 +1,6 @@
+#!/bin/bash
+echo playlist url?
+read playlist
+echo password?
+read -s password
+youtube-dl -x --audio-quality 0 --download-archive archive.txt --audio-format "mp3" ${playlist} --username "dabstep17@gmail.com" --password ${password} -o "%(title)s.%(ext)s"
